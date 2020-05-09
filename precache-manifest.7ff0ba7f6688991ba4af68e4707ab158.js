@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "661d77afbf7bad4228eed82eb93d2238",
+    "revision": "053782ffd42bc1dcbdb6a6531b4ce5fe",
     "url": "/joannes-birthday-2020/index.html"
   },
   {
-    "revision": "3e6331264644d762290a",
+    "revision": "00d2bee9db974a51133e",
     "url": "/joannes-birthday-2020/static/css/main.5f361e03.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/joannes-birthday-2020/static/js/2.495ed03a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3e6331264644d762290a",
-    "url": "/joannes-birthday-2020/static/js/main.2477d477.chunk.js"
+    "revision": "00d2bee9db974a51133e",
+    "url": "/joannes-birthday-2020/static/js/main.b0aac7ac.chunk.js"
   },
   {
     "revision": "d5ec7d22b9f681b2bc61",
