@@ -1,27 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9028d05c1c307450118ee160b7e24476",
+    "revision": "661d77afbf7bad4228eed82eb93d2238",
     "url": "/joannes-birthday-2020/index.html"
   },
   {
-    "revision": "b8076be7a7505423014c",
+    "revision": "3e6331264644d762290a",
     "url": "/joannes-birthday-2020/static/css/main.5f361e03.chunk.css"
   },
   {
-    "revision": "3b92c2abbdf2dddce4e0",
-    "url": "/joannes-birthday-2020/static/js/2.cdcade5f.chunk.js"
+    "revision": "943dd3053f8d493917c4",
+    "url": "/joannes-birthday-2020/static/js/2.495ed03a.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/joannes-birthday-2020/static/js/2.cdcade5f.chunk.js.LICENSE.txt"
+    "url": "/joannes-birthday-2020/static/js/2.495ed03a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b8076be7a7505423014c",
-    "url": "/joannes-birthday-2020/static/js/main.7ab84d1c.chunk.js"
+    "revision": "3e6331264644d762290a",
+    "url": "/joannes-birthday-2020/static/js/main.2477d477.chunk.js"
   },
   {
     "revision": "d5ec7d22b9f681b2bc61",
     "url": "/joannes-birthday-2020/static/js/runtime-main.3595984c.js"
+  },
+  {
+    "revision": "11a05ed6401f4e53471e2df4ce7109f6",
+    "url": "/joannes-birthday-2020/static/media/androulla.11a05ed6.jpeg"
+  },
+  {
+    "revision": "8d69e428656745a86a8e8296350f43a3",
+    "url": "/joannes-birthday-2020/static/media/androulla.8d69e428.ogg"
   },
   {
     "revision": "344b3f86ef7c416b4c253f7703088331",
@@ -36,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/joannes-birthday-2020/static/media/flors.64ca6b61.jpg"
   },
   {
-    "revision": "7edb06aa8a4f47666a386d956cd10027",
-    "url": "/joannes-birthday-2020/static/media/mario.7edb06aa.ogg"
+    "revision": "37ed30d6c00df2ebefa2c3a023d0beb8",
+    "url": "/joannes-birthday-2020/static/media/mario.37ed30d6.ogg"
   },
   {
     "revision": "e0792f917a86babf3359dd8693746984",
@@ -58,5 +66,13 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "506b568c905ee5a48c314510bde36923",
     "url": "/joannes-birthday-2020/static/media/saimon-eulalia.506b568c.jpg"
+  },
+  {
+    "revision": "538bc1baff7b539472be6397eb3353e4",
+    "url": "/joannes-birthday-2020/static/media/sofia.538bc1ba.jpg"
+  },
+  {
+    "revision": "6c060e4e0ec535ce1ded34565cd136b0",
+    "url": "/joannes-birthday-2020/static/media/sofia.6c060e4e.ogg"
   }
 ]);
