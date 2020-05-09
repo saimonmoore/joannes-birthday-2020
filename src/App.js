@@ -1,46 +1,96 @@
-import React from 'react';
-import logo from './logo.svg';
-import flors from './flors.jpg';
-import nazhseis from './nazhseisjoanne.m4a';
-import './App.css';
+import React, { useState } from "react";
+import flors from "./assets/flors.jpg";
+import saimonAndEulaliaPhoto from "./assets/saimon-eulalia.jpg";
+import saimonAndEulaliaAudio from "./assets/nazhseisjoanne.m4a";
+import marioPhoto from "./assets/mario.jpg";
+import marioAudio from "./assets/mario.ogg";
+import eliaPhoto from "./assets/elia.jpg";
+import eliaAudio from "./assets/elia.m4a";
+import polPhoto from "./assets/pol.jpg";
+import polAudio from "./assets/pol.m4a";
+import "./App.css";
 
-const AudioPlay = ({src, shouldPlay}) => {
+const AudioPlay = ({ src, shouldPlay, setPlay }) => {
   const audioPlayer = new Audio(src);
 
   if (shouldPlay) {
-    audioPlayer.play()
+    audioPlayer.play();
+    setPlay(false);
   } else {
     audioPlayer.pause();
   }
 
-  return ("");
+  return "";
 };
 
-const ClickableLetter = (props) => {
+const ClickableLetter = ({ letter, children, action }) => {
   return (
     <span>
-    <strong style={{ color: 'seagreen', fontSize: '90px', cursor: 'pointer', marginRight: '20px'}} onClick={props.action}>{props.letter}</strong>
-    {props.children}
+      <strong
+        style={{
+          color: "seagreen",
+          fontSize: "120px",
+          cursor: "pointer",
+          marginRight: "20px"
+        }}
+        onClick={action}
+      >
+        {letter}
+      </strong>
+      {children}
     </span>
   );
 };
 
+const Letter = ({ letter, index, setPhoto }) => {
+  const [play, setPlay] = useState(false);
+  const { audio, photo } = ASSETS[index];
+
+  const onClick = () => {
+    audio && setPlay(!play);
+    photo && setPhoto(photo);
+  };
+
+  return (
+    <ClickableLetter letter={letter} action={onClick}>
+      <AudioPlay src={audio} shouldPlay={play} setPlay={setPlay} />
+    </ClickableLetter>
+  );
+};
+
+const ASSETS = {
+  0: { audio: saimonAndEulaliaAudio, photo: saimonAndEulaliaPhoto },
+  1: { audio: marioAudio, photo: marioPhoto },
+  2: { audio: null, photo: null },
+  3: { audio: null, photo: null },
+  4: { audio: polAudio, photo: polPhoto },
+  5: { audio: eliaAudio, photo: eliaPhoto }
+};
+
+const JOANNE = "JOANNE".split("");
+
 function App() {
+  const [photo, setPhoto] = useState(flors);
+
   return (
     <div className="App">
       <header className="App-header">
-        <h1 style={{ color: 'darksalmon'}}>Happy Birthday</h1>
-        <img src={flors}  width={300} height={200}/>
+        <h1 style={{ color: "darksalmon" }}>Happy Birthday</h1>
+        <img
+          src={photo}
+          width={500}
+          height={500}
+          alt="Να ζησεις αδερφουλλα μου. Σ'αγαπω ❤️"
+        />
         <div>
-      <ClickableLetter letter={"J"} action={() => { console.log("Clicked J...");}}>
-        <AudioPlay src={nazhseis} shouldPlay={false} />
-      </ClickableLetter>
-
-      <ClickableLetter letter={"O"} />
-      <ClickableLetter letter={"A"} />
-      <ClickableLetter letter={"N"} />
-      <ClickableLetter letter={"N"} />
-      <ClickableLetter letter={"E"} />
+          {JOANNE.map((letter, index) => (
+            <Letter
+              letter={letter}
+              index={index}
+              key={index}
+              setPhoto={setPhoto}
+            />
+          ))}
         </div>
       </header>
     </div>
