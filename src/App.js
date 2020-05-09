@@ -2,12 +2,17 @@ import React, { useState } from "react";
 import flors from "./assets/flors.jpg";
 import saimonAndEulaliaPhoto from "./assets/saimon-eulalia.jpg";
 import saimonAndEulaliaAudio from "./assets/nazhseisjoanne.m4a";
+import sofiaPhoto from "./assets/sofia.jpg";
+import sofiaAudio from "./assets/sofia.ogg";
 import marioPhoto from "./assets/mario.jpg";
 import marioAudio from "./assets/mario.ogg";
 import eliaPhoto from "./assets/elia.jpg";
 import eliaAudio from "./assets/elia.m4a";
 import polPhoto from "./assets/pol.jpg";
 import polAudio from "./assets/pol.m4a";
+import androullaPhoto from "./assets/androulla.jpeg";
+import androullaAudio from "./assets/androulla.ogg";
+
 import "./App.css";
 
 const AudioPlay = ({ src, shouldPlay, setPlay }) => {
@@ -61,8 +66,8 @@ const Letter = ({ letter, index, setPhoto }) => {
 const ASSETS = {
   0: { audio: saimonAndEulaliaAudio, photo: saimonAndEulaliaPhoto },
   1: { audio: marioAudio, photo: marioPhoto },
-  2: { audio: null, photo: null },
-  3: { audio: null, photo: null },
+  2: { audio: sofiaAudio, photo: sofiaPhoto },
+  3: { audio: androullaAudio, photo: androullaPhoto },
   4: { audio: polAudio, photo: polPhoto },
   5: { audio: eliaAudio, photo: eliaPhoto }
 };
