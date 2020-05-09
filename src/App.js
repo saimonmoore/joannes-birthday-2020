@@ -86,6 +86,7 @@ function App() {
           width={500}
           height={500}
           alt="Να ζησεις αδερφουλλα μου. Σ'αγαπω ❤️"
+          title="Να ζησεις αδερφουλλα μου. Σ'αγαπω ❤️"
         />
         <div>
           {JOANNE.map((letter, index) => (
